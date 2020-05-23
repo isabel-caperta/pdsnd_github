@@ -21,7 +21,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('\nHello! Let\'s explore some US bikeshare data!\n')
+    print('\nHello there! Let\'s explore some US bikeshare data!\n')
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Would you like to see data for Chicago, New York City or Washington?\n')
@@ -184,7 +184,7 @@ def user_stats(df):
 
 
 def display_data(df):
-    view_raw = input('\nWould you like to view individual trip data? Enter yes or no.\n')
+    view_raw = input('\nWould you like to view individual trip data? Type \'yes\' or \'no\'.\n')
     while True:
         if view_raw.lower() != 'yes':
             break
@@ -197,7 +197,7 @@ def display_data(df):
                 else:
                     pd.options.display.max_columns = 12
                     print (df.iloc[i-5 : i])
-                    view_raw = input('\nWould you like to view 5 more individual trip data entries? Enter yes or no.\n')
+                    view_raw = input('\nWould you like to view 5 more individual trip data entries? Type \'yes\' or \'no\'.\n')
                     if view_raw.lower() != 'yes':
                         break
 
