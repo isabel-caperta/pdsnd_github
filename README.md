@@ -17,5 +17,9 @@ Data files: 	chicago.csv
 ### Credits
 Udacity's "Programming for Data Science with Python Nanodegree Program"
 https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
+ 
+This project was developed as part of the assignments for the following chapters 4 and 5:
+- Introduction to Python
+- Introduction to Version Control
 
 
