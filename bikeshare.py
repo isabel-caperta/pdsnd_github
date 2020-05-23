@@ -1,3 +1,7 @@
+# EXPLORE US BIKESHARE DATA WITH PYTHON
+# This project uses Python to understand U.S. bikeshare data.
+# It calculates statistics and builts an interactive environmente where a user chooses the data and filter for a dataset to analyze.
+
 import time
 import datetime
 import pandas as pd
@@ -18,7 +22,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('\nHello! Let\'s explore some US bikeshare data!\n')
-    
+
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Would you like to see data for Chicago, New York City or Washington?\n')
     city = city.lower()
@@ -196,8 +200,8 @@ def display_data(df):
                     view_raw = input('\nWould you like to view 5 more individual trip data entries? Enter yes or no.\n')
                     if view_raw.lower() != 'yes':
                         break
-            
-    
+
+
 def main():
     while True:
         city, month, day = get_filters()
